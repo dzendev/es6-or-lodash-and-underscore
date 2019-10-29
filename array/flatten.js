@@ -18,7 +18,6 @@ console.log("lod.flatten(arr)", lod.flatten(arr));
 console.log("arr.flat(1)", arr.flat(1));
 console.log("arr.flat()", arr.flat());
 
-// func
 function flatten(arr) {
 	let arrFlatten = [];
 	arr.forEach(elem => {
