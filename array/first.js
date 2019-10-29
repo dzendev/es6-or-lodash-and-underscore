@@ -2,8 +2,8 @@ const und = require('underscore');
 const lod = require('lodash');
 
 /**
- * Вернуть первый элемент массива
- * [5, 4, 3, 2, 1] -> 5
+ * first - возвращает первый элемент массива
+ * _.first([5, 4, 3, 2, 1]) -> 5
  */
 
 const arr = [5, 4, 3, 2, 1];
