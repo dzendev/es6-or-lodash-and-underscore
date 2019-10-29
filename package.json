@@ -1,0 +1,23 @@
+{
+  "name": "es6-or-lodash-and-underscore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzendev/es6-or-lodash-and-underscore.git"
+  },
+  "author": "dzendev@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dzendev/es6-or-lodash-and-underscore/issues"
+  },
+  "homepage": "https://github.com/dzendev/es6-or-lodash-and-underscore#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "underscore": "^1.9.1"
+  }
+}
