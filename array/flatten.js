@@ -9,7 +9,7 @@ const lod = require('lodash');
 const arr = [1, [2, [3, [4]], 5]];
 
 // underscore
-console.log("und.flatten(arr)", und.flatten(arr, 1));
+console.log("und.flatten(arr)", und.flatten(arr, true));
 
 // lodash
 console.log("lod.flatten(arr)", lod.flatten(arr));
