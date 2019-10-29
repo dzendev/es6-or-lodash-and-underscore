@@ -2,7 +2,7 @@ const und = require('underscore');
 const lod = require('lodash');
 
 /**
- * drop - возвращает часть массива
+ * drop - возвращает часть массива исключая первые элементы
  * _.drop([5, 4, 3, 2, 1], 2) -> [ 3, 2, 1 ]
  */
 
