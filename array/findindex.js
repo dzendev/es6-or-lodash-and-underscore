@@ -7,12 +7,12 @@ const lod = require('lodash');
  */
 
 // underscore
-console.log("und.findIndex([{'x':1}, {'x':2}, {'x':3}], ['x', 2])", und.findIndex([{'x':1}, {'x':2}, {'x':3}], ['x', 2])); // не будет работать
-console.log("und.findIndex([{'x':1}, {'x':2}, {'x':3}], {'x': 2})", und.findIndex([{'x':1}, {'x':2}, {'x':3}], {'x': 2}));
+console.log("und.findIndex([{'x':1}, {'x':2}, {'x':3}, {'x':2}], ['x', 2])", und.findIndex([{'x':1}, {'x':2}, {'x':3}], ['x', 2])); // не будет работать
+console.log("und.findIndex([{'x':1}, {'x':2}, {'x':3}, {'x':2}, {'x': 2})", und.findIndex([{'x':1}, {'x':2}, {'x':3}], {'x': 2}));
 
 // lodash
-console.log("lod.findIndex([{'x':1}, {'x':2}, {'x':3}], ['x', 2])", lod.findIndex([{'x':1}, {'x':2}, {'x':3}, {'x':2}], ['x', 2]));
-console.log("lod.findIndex([{'x':1}, {'x':2}, {'x':3}], {'x': 2})", lod.findIndex([{'x':1}, {'x':2}, {'x':3}, {'x':2}], {'x': 2}));
+console.log("lod.findIndex([{'x':1}, {'x':2}, {'x':3}, {'x':2}], ['x', 2])", lod.findIndex([{'x':1}, {'x':2}, {'x':3}, {'x':2}], ['x', 2]));
+console.log("lod.findIndex([{'x':1}, {'x':2}, {'x':3}, {'x':2}], {'x': 2})", lod.findIndex([{'x':1}, {'x':2}, {'x':3}, {'x':2}], {'x': 2}));
 
 // es6
 function findIndex(arr, value) {
@@ -21,5 +21,5 @@ function findIndex(arr, value) {
 	return arr.findIndex(el => JSON.stringify(el) === JSON.stringify(value));
 }
 
-console.log("findIndex([{'x':1}, {'x':2}, {'x':3}], ['x', 2])", findIndex([{'x':1}, {'x':2}, {'x':3}], ['x', 2]));
-console.log("findIndex([{'x':1}, {'x':2}, {'x':3}], {'x': 2})", findIndex([{'x':1}, {'x':2}, {'x':3}], {'x': 2}));
+console.log("findIndex([{'x':1}, {'x':2}, {'x':3}, {'x':2}], ['x', 2])", findIndex([{'x':1}, {'x':2}, {'x':3}], ['x', 2]));
+console.log("findIndex([{'x':1}, {'x':2}, {'x':3}, {'x':2}], {'x': 2})", findIndex([{'x':1}, {'x':2}, {'x':3}], {'x': 2}));
