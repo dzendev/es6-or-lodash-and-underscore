@@ -3,7 +3,7 @@ const lod = require('lodash');
 
 /**
  * slice - возвращает часть массива
- * _.slice([1, 2, 3, 4]) -> [ 2 ]
+ * _.slice([1, 2, 3, 4], 1, 2) -> [ 2 ]
  */
 
 // lodash
