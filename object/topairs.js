@@ -2,7 +2,7 @@ const und = require('underscore');
 const lod = require('lodash');
 
 /**
- * toPairs - преобразует массив в объект
+ * toPairs - преобразует объект в массив
  * _.toPairs({ x: 1, y: 2 }) -> [['x', 1], ['y', 2]]
  */
 
