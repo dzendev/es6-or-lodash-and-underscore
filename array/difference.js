@@ -7,7 +7,8 @@ const lod = require('lodash');
  * _.difference([2, 1], [2, 3]) -> 'b'
  */
 
-const arr = ['a', 'b', 'c', 'a', 'b', 'c'];
+// underscore
+console.log("und.difference([2, 1], [2, 3])", und.difference([2, 1], [2, 3]));
 
 // lodash
 console.log("lod.difference([2, 1], [2, 3])", lod.difference([2, 1], [2, 3]));
