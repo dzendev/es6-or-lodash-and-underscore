@@ -3,7 +3,7 @@ const lod = require('lodash');
 
 /**
  * take - часть массива
- * _.take([1, 2, 3]) -> [ 1, 2 ]
+ * _.take([1, 2, 3], 2) -> [ 1, 2 ]
  */
 
 // lodash
