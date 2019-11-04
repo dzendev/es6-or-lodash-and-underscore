@@ -21,6 +21,7 @@ console.log("arr.flat()", arr.flat());
 console.log("arr.flat(1)", arr.flat(1));
 console.log("arr.flat(2)", arr.flat(2));
 
+// первый вариант
 function flattenDepth(arr, depth = 1) {
 	let arrFlatten = [];
 	arr.forEach(elem => {
@@ -36,5 +37,21 @@ function flattenDepth(arr, depth = 1) {
 }
 
 console.log("flattenDepth(arr)", flattenDepth(arr));
-console.log("flattenDepth(arr)", flattenDepth(arr, 1));
+console.log("flattenDepth(arr, 1)", flattenDepth(arr, 1));
 console.log("flattenDepth(arr, 2)", flattenDepth(arr, 2));
+console.log("flattenDepth(arr, Infinity)", flattenDepth(arr, Infinity));
+
+// второй вариант
+function* flattenGenerator(array, depth = 1) {
+	for (const item of array) {
+		if (Array.isArray(item) && depth > 0) {
+			yield* flattenGenerator(item, depth - 1);
+		} else {
+			yield item;
+		}
+	}
+}
+
+console.log("[...flattenGenerator(arr)]", [...flattenGenerator(arr)]);
+console.log("[...flattenGenerator(arr, 2)]", [...flattenGenerator(arr, 2)]);
+console.log("[...flattenGenerator(arr, Infinity)]", [...flattenGenerator(arr, Infinity)]);
