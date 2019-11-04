@@ -17,3 +17,4 @@ console.log("lod.initial(arr)", lod.initial(arr));
 
 // es6
 console.log("arr.slice(0, -1)", arr.slice(0, -1));
+console.log("arr.slice(0, -2)", arr.slice(0, -2)); // und.initial(arr, 2))
