@@ -13,18 +13,18 @@ console.log("lod.unionWith(objectsUnionWith, othersUnionWith, lod.isEqual)", lod
 
 // es6
 function equalObject(...objects) {
-  var arrEqual = objects.map(function (elem) {
-    return Object.entries(elem).sort(function(a, b) {
-      if (a[0] > b[0]) {
-        return 1;
-      }
-      if (a[0] < b[0]) {
-        return -1;
-      }
-      return 0;
-    });
-  });
-  return JSON.stringify(arrEqual[0]) == JSON.stringify(arrEqual[1]);
+	var arrEqual = objects.map(function (elem) {
+		return Object.entries(elem).sort(function(a, b) {
+			if (a[0] > b[0]) {
+				return 1;
+			}
+			if (a[0] < b[0]) {
+				return -1;
+			}
+			return 0;
+		});
+	});
+	return JSON.stringify(arrEqual[0]) == JSON.stringify(arrEqual[1]);
 }
 
 function unionWith(obj1, obj2, callback) {
