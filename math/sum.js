@@ -2,7 +2,7 @@ const und = require('underscore');
 const lod = require('lodash');
 
 /**
- * sum - разделить два числа
+ * sum - сумма всех элементов массива
  * _.sum([4, 2, 8, 6]) -> 20
  */
 
