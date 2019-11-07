@@ -2,7 +2,7 @@ const und = require('underscore');
 const lod = require('lodash');
 
 /**
- * includes - возвращает отсортированный массив
+ * includes - наличие элемента в коллекции
  * _.includes([1, 2, 3], 1) -> true
  */
 
