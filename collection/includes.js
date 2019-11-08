@@ -2,18 +2,24 @@ const und = require('underscore');
 const lod = require('lodash');
 
 /**
- * includes - наличие элемента в коллекции
- * _.includes([1, 2, 3], 1) -> true
+ * forEach - перебор коллекции
+ * _.forEach([1, 2], value => value * 2) -> 2 4
  */
 
 // lodash
-console.log("lod.includes([1, 2, 3], 1)", lod.includes([1, 2, 3], 1));
-console.log("lod.includes([1, 2, 3], 1, 2)", lod.includes([1, 2, 3], 1, 2));
-console.log("lod.includes({ 'a': 1, 'b': 2 }, 1)", lod.includes({ 'a': 1, 'b': 2 }, 1));
-console.log("lod.includes('abcd', 'bc')", lod.includes('abcd', 'bc'));
+lod.forEach([1, 2], function(value) {
+  console.log(value * 2);
+});
+lod.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
+  console.log(key);
+});
 
 // es6
-console.log("[1, 2, 3].includes(1)", [1, 2, 3].includes(1));
-console.log("[1, 2, 3].includes(1, 2)", [1, 2, 3].includes(1, 2));
-console.log("Object.values({'a':1, 'b':2}).includes(1)", Object.values({'a':1, 'b':2}).includes(1));
-console.log("'abcd'.includes('bc')", 'abcd'.includes('bc'));
+[1, 2].forEach(value => console.log(value * 2))
+Object.keys({ 'a': 1, 'b': 2 }).forEach(value => console.log(value));
+let obj = { 'a': 1, 'b': 2 };
+for (let prop in obj) {
+	if (obj.hasOwnProperty(prop)) {
+		console.log(prop)
+	}
+}
