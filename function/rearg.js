@@ -13,10 +13,10 @@ var rearged = lod.rearg(function(a, b, c) {
 console.log("rearged('b', 'c', 'a')", rearged('b', 'c', 'a'));
 
 // es6
-function rearg(callback, sequence) {
+function rearg(callback, order) {
 	return function(...arg) {
 		let reargArg = [];
-		sequence.forEach((i) => {
+		order.forEach((i) => {
 			reargArg.push(arg[i]);
 		});
 		return callback(...reargArg);
