@@ -17,11 +17,11 @@ console.log("lod.inRange(-3, -2, -6)", lod.inRange(-3, -2, -6));
 
 // es6
 function inRange(num, start, end){
-	// если end меньше start, поменять переменные местами
 	if(arguments.length == 2) {
 		if(num < start) return true;
 	}
 	if(arguments.length == 3) {
+		// если end меньше start, поменять переменные местами
 		if(end < start) [start, end] = [end, start];
 		if(num > start && num < end) return true;
 	}
