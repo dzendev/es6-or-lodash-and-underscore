@@ -5,6 +5,10 @@ const lod = require('lodash');
  * now - возвращает текущую метку времени
  */
 
+// underscore
+console.log("und.now()", und.now());
+console.log("new Date(und.now())", new Date(und.now()));
+
 // lodash
 console.log("lod.now()", lod.now());
 console.log("new Date(lod.now())", new Date(lod.now()));
