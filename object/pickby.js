@@ -17,8 +17,8 @@ console.log("lod.pickBy(object, (value, key, obj) => ['a', 'c'].includes(key))",
 function pickBy(obj, callback) {
 	let newObj = {};
 	for (let prop in obj) {
-		if (obj.hasOwnProperty(prop)) {
-			if(callback(obj[prop], prop, obj)) newObj[prop] = obj[prop];
+		if (callback(obj[prop], prop, obj) && obj.hasOwnProperty(prop)) {
+			newObj[prop] = obj[prop];
 		}
 	}
 	return newObj;
