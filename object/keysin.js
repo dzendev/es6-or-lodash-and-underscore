@@ -12,6 +12,9 @@ function Foo() {
 
 Foo.prototype.c = 3;
 
+// underscore
+console.log("und.allKeys(new Foo)", und.allKeys(new Foo));
+
 // lodash
 console.log("lod.keysIn(new Foo)", lod.keysIn(new Foo));
 
