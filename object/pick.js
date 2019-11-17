@@ -17,9 +17,11 @@ console.log("lod.pick(object, ['a', 'c'])", lod.pick(object, ['a', 'c']));
 // es6
 function pick(obj, arr) {
 	let newObj = {};
-	arr.forEach(prop => {
-		if(obj.hasOwnProperty(prop)) newObj[prop] = obj[prop];
-	});
+	for (let prop in obj) {
+		if (arr.includes(prop) && obj.hasOwnProperty(prop)) {
+			newObj[prop] = obj[prop];
+		}
+	}
 	return newObj;
 }
 
