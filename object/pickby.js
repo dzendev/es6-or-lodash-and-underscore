@@ -14,10 +14,10 @@ console.log("und.pick(object, (value, key, obj) => ['a', 'c'].includes(key))", u
 console.log("lod.pickBy(object, (value, key, obj) => ['a', 'c'].includes(key))", lod.pickBy(object, (value, key, obj) => ['a', 'c'].includes(key)));
 
 // es6
-function pickBy(obj, callback) {
+function pickBy(obj, fn) {
 	let newObj = {};
 	for (let prop in obj) {
-		if (callback(obj[prop], prop, obj) && obj.hasOwnProperty(prop)) {
+		if (fn(obj[prop], prop, obj) && obj.hasOwnProperty(prop)) {
 			newObj[prop] = obj[prop];
 		}
 	}
