@@ -14,10 +14,10 @@ console.log("und.omit(object, (value, key, obj) => ['a', 'c'].includes(key))", u
 console.log("lod.omitBy(object, (value, key, obj) => ['a', 'c'].includes(key))", lod.omitBy(object, (value, key, obj) => ['a', 'c'].includes(key)));
 
 // es6
-function omitBy(obj, callback) {
+function omitBy(obj, fn) {
 	let newObj = {};
 	for (let prop in obj) {
-		if (!callback(obj[prop], prop, obj) && obj.hasOwnProperty(prop)) {
+		if (!fn(obj[prop], prop, obj) && obj.hasOwnProperty(prop)) {
 			newObj[prop] = obj[prop];
 		}
 	}
