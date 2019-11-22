@@ -21,8 +21,7 @@ function pad(str='', length=0, chars=' ') {
 	let paddingLeft = strLength + Math.floor((paddingSrt) / 2);
 	let paddingRight = paddingLeft + Math.ceil((paddingSrt) / 2);
 
-	str = str.padStart(paddingLeft, chars);
-	return str.padEnd(paddingRight, chars);
+	return str.padStart(paddingLeft, chars).padEnd(paddingRight, chars);
 }
 
 console.log("pad('abc', 8)", pad('abc', 8));
