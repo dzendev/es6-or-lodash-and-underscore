@@ -2,7 +2,7 @@ const und = require('underscore');
 const lod = require('lodash');
 
 /**
- * upperFirst - преобразует строку в верхний регистр разбивая на отдельные слова
+ * upperCase - преобразует строку в верхний регистр разбивая на отдельные слова
  */
 
 // lodash
