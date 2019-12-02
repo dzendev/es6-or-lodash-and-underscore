@@ -18,14 +18,17 @@ console.log("lod.range(0)", lod.range(0));
 
 // es6
 function range(start, length, index=1) {
-	if(arguments.length === 1){
-		if(arguments[0] === 0) return [];
-		if(start > 0)
-			return Array.from({ length: Math.abs(start) }, (v, k) => k);
-		else
-			return Array.from({ length: Math.abs(start) }, (v, k) => k).map((e, i) => -i);
+	function f1(length) {
+		if(length > 0) {
+			return Array.from({ length: Math.abs(length) }, (v, k) => k);
+		} else if(length < 0) {
+			return Array.from({ length: Math.abs(length) }, (v, k) => -k);
+		} else {
+			return [];
+		}
 	}
-	if(arguments.length === 2){
+
+	function f2(start, length) {
 		let ind = start;
 		let arr = [];
 		while(ind !== length){
@@ -37,7 +40,8 @@ function range(start, length, index=1) {
 		}
 		return arr;
 	}
-	if(arguments.length >= 3){
+
+	function f3(start, length, index) {
 		let i = start;
 		let ind = start;
 		let arr = [];
@@ -47,6 +51,17 @@ function range(start, length, index=1) {
 			ind += index;
 		}
 		return arr;
+	}
+
+	switch(arguments.length) {
+		case 1:
+			return f1(start);
+			break;
+		case 2:
+			return f2(start, length);
+			break;
+		default:
+			return f3(start, length, index);
 	}
 }
 
