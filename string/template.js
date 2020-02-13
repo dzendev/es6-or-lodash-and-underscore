@@ -2,7 +2,7 @@ const und = require('underscore');
 const lod = require('lodash');
 
 /**
- * template -
+ * template - шаблоны
  */
 
 // lodash
