@@ -2,7 +2,7 @@ const und = require('underscore');
 const lod = require('lodash');
 
 /**
- * escape - преобразует строку в нижний регистр, первый символ в верхний
+ * escape - преобразует символы "&", "<", ">", '"', "'" в HMLL спецсимволы
  */
 
 // lodash
