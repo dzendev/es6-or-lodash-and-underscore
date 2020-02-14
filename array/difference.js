@@ -4,7 +4,7 @@ const lod = require('lodash');
 /**
  * difference - возвращает массив значений из первого массива,
  * которые отсутствуют во втором массиве
- * _.difference([2, 1], [2, 3]) -> 'b'
+ * _.difference([2, 1], [2, 3]) -> 1
  */
 
 // underscore
