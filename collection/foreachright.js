@@ -10,10 +10,13 @@ const lod = require('lodash');
 lod.forEachRight([1, 2], function(value) {
   console.log(value);
 });
+lod.eachRight([11, 22], function(value) {
+	console.log(value);
+});
 
 // es6
-let arr = [1, 2];
-arr.reduceRight((_, el) => console.log(el), 0);
+[1, 2].reduceRight((_, el) => console.log(el), 0);
+let arr = [11, 22];
 for (let i = arr.length - 1; i >= 0; --i) {
 	console.log(arr[i]);
 }
