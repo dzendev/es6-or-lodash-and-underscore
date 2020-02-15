@@ -24,4 +24,4 @@ console.log("lod.some(users, 'active')", lod.some(users, 'active'));
 console.log("[null, 0, 'yes', false].some(Boolean)", [null, 0, 'yes', false].some(Boolean));
 console.log("users.some(o => o.user == 'barney' && o.active === false)", users.some(o => o.user == 'barney' && o.active === false));
 console.log("users.some(o => o.active === false)", users.some(o => o.active === false));
-console.log("users.some(o => 'active' in o)", users.some(o => 'active' in o));
+console.log("users.some(o => 'active' in o)", users.some(o => o['active']));
