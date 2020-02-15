@@ -10,7 +10,7 @@ const lod = require('lodash');
 lod.forEach([1, 2], function(value) {
   console.log(value * 2);
 });
-lod.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
+lod.each({ 'a': 1, 'b': 2 }, function(value, key) {
   console.log(key);
 });
 
