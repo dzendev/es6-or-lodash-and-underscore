@@ -3,7 +3,6 @@ const lod = require('lodash');
 
 /**
  * forIn - перебирает объект
- * _.forIn(6, 4) -> 24
  */
 
 function Foo() {
