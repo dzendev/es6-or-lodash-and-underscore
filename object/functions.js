@@ -2,7 +2,7 @@ const und = require('underscore');
 const lod = require('lodash');
 
 /**
- * functions - созда1т
+ * functions - создаёт массив из ключей объекта
  */
 
 function Foo() {
