@@ -2,7 +2,7 @@ const und = require('underscore');
 const lod = require('lodash');
 
 /**
- * isWeakMap - проверяет является ли выражение WeakSet
+ * isWeakSet - проверяет является ли выражение WeakSet
 */
 
 // lodash
