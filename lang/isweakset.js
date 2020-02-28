@@ -7,7 +7,7 @@ const lod = require('lodash');
 
 // lodash
 console.log("lod.isWeakSet(new WeakSet)", lod.isWeakSet(new WeakSet));
-console.log("lod.isWeakSet(new Map)", lod.isWeakSet(new Map));
+console.log("lod.isWeakSet(new Set)", lod.isWeakSet(new Set));
 
 // es6
 function isWeakSet(value) {
