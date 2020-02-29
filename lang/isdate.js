@@ -1,0 +1,19 @@
+const und = require('underscore');
+const lod = require('lodash');
+
+/**
+ * isDate - проверяет является ли выражение объектом Date
+ */
+
+// lodash
+console.log("lod.isDate(new Date)", lod.isDate(new Date));
+console.log("lod.isDate('Mon April 23 2012')", lod.isDate('Mon April 23 2012'));
+
+// es6
+function isDate(value) {
+	if(Object.prototype.toString.call(value) === '[object Date]') return true;
+	return false;
+}
+
+console.log("isDate(new Date)", isDate(new Date));
+console.log("isDate('Mon April 23 2012')", isDate('Mon April 23 2012'));
