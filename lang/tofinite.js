@@ -2,7 +2,7 @@ const und = require('underscore');
 const lod = require('lodash');
 
 /**
- * toFinite - возвращает строку, представляющую объект.
+ * toFinite - конвертирует значение в конечное число.
  */
 
 // lodash
