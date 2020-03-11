@@ -20,3 +20,4 @@ console.log("lod.assign({ 'a': 0 }, new Foo, new Bar)", lod.assign({ 'a': 0 }, n
 
 // es6
 console.log("Object.assign({ 'a': 0 }, new Foo, new Bar)", Object.assign({ 'a': 0 }, new Foo, new Bar));
+console.log("{...{'a': 0}, ...new Foo, ...new Bar}", {...{'a': 0}, ...new Foo, ...new Bar});
