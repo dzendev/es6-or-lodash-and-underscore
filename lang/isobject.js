@@ -6,6 +6,12 @@ const lod = require('lodash');
  */
 
 // lodash
+console.log("und.isObject({})", und.isObject({}));
+console.log("und.isObject([1, 2, 3])", und.isObject([1, 2, 3]));
+console.log("und.isObject(und.noop)", und.isObject(und.noop));
+console.log("und.isObject(null)", und.isObject(null));
+
+// lodash
 console.log("lod.isObject({})", lod.isObject({}));
 console.log("lod.isObject([1, 2, 3])", lod.isObject([1, 2, 3]));
 console.log("lod.isObject(lod.noop)", lod.isObject(lod.noop));
