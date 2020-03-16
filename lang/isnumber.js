@@ -5,6 +5,12 @@ const lod = require('lodash');
  * isNumber - проверяет является ли выражение number.
  */
 
+// underscore
+console.log("und.isNumber(3)", und.isNumber(3));
+console.log("und.isNumber(Number.MIN_VALUE)", und.isNumber(Number.MIN_VALUE));
+console.log("und.isNumber(Infinity)", und.isNumber(Infinity));
+console.log("und.isNumber('3')", und.isNumber('3'));
+
 // lodash
 console.log("lod.isNumber(3)", lod.isNumber(3));
 console.log("lod.isNumber(Number.MIN_VALUE)", lod.isNumber(Number.MIN_VALUE));
