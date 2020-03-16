@@ -5,6 +5,10 @@ const lod = require('lodash');
  * isMap - проверяет является ли выражение Map
  */
 
+// underscore
+console.log("und.isMap(new Map)", und.isMap(new Map));
+console.log("und.isMap(new WeakMap)", und.isMap(new WeakMap));
+
 // lodash
 console.log("lod.isMap(new Map)", lod.isMap(new Map));
 console.log("lod.isMap(new WeakMap)", lod.isMap(new WeakMap));
