@@ -5,6 +5,10 @@ const lod = require('lodash');
  * isString - проверяет является ли выражение string
  */
 
+// underscore
+console.log("und.isString('abc')", und.isString('abc'));
+console.log("und.isString(1)", und.isString(1));
+
 // lodash
 console.log("lod.isString('abc')", lod.isString('abc'));
 console.log("lod.isString(1)", lod.isString(1));
