@@ -5,6 +5,10 @@ const lod = require('lodash');
  * isSet - проверяет является ли выражение Set
 */
 
+// underscore
+console.log("und.isSet(new Set)", und.isSet(new Set));
+console.log("und.isSet(new WeakSet)", und.isSet(new WeakSet));
+
 // lodash
 console.log("lod.isSet(new Set)", lod.isSet(new Set));
 console.log("lod.isSet(new WeakSet)", lod.isSet(new WeakSet));
