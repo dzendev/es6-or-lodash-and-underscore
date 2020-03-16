@@ -5,6 +5,9 @@ const lod = require('lodash');
  * isNull - проверяет является ли выражение null
  */
 
+console.log("und.isNull(null)", und.isNull(null));
+console.log("und.isNull(void 0)", und.isNull(void 0));
+
 // lodash
 console.log("lod.isNull(null)", lod.isNull(null));
 console.log("lod.isNull(void 0)", lod.isNull(void 0));
