@@ -5,6 +5,12 @@ const lod = require('lodash');
  * isFinite - проверяет является ли выражение числом
  */
 
+// underscore
+console.log("und.isFinite(3)", und.isFinite(3));
+console.log("und.isFinite(Number.MIN_VALUE)", und.isFinite(Number.MIN_VALUE));
+console.log("und.isFinite(Infinity)", und.isFinite(Infinity));
+console.log("und.isFinite('3')", und.isFinite('3'));
+
 // lodash
 console.log("lod.isFinite(3)", lod.isFinite(3));
 console.log("lod.isFinite(Number.MIN_VALUE)", lod.isFinite(Number.MIN_VALUE));
