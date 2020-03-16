@@ -2,20 +2,22 @@ const und = require('underscore');
 const lod = require('lodash');
 
 /**
- * some - перебирает объект
- * _.some(6, 4) -> 24
+ * some - вернёт true, если хотя бы для одного значения  вернёт true
  */
-
-
-
-// lodash
-console.log("lod.some([null, 0, 'yes', false], Boolean)", lod.some([null, 0, 'yes', false], Boolean));
 
 var users = [
 	{ 'user': 'barney', 'active': true },
 	{ 'user': 'fred',   'active': false }
 ];
 
+// underscore
+console.log("und.some([null, 0, 'yes', false], Boolean)", und.some([null, 0, 'yes', false], Boolean));
+console.log("und.some(users, o => o.user == 'barney' && o.active === false)", und.some(users, o => o.user == 'barney' && o.active === false));
+console.log("und.some(users, o => o.active === false)", und.some(users, o => o.active === false));
+console.log("und.some(users, o => 'active' in o)", und.some(users, o => 'active' in o));
+
+// lodash
+console.log("lod.some([null, 0, 'yes', false], Boolean)", lod.some([null, 0, 'yes', false], Boolean));
 console.log("lod.some(users, { 'user': 'barney', 'active': false })", lod.some(users, { 'user': 'barney', 'active': false }));
 console.log("lod.some(users, ['active', false])", lod.some(users, ['active', false]));
 console.log("lod.some(users, 'active')", lod.some(users, 'active'));
