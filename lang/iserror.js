@@ -5,6 +5,10 @@ const lod = require('lodash');
  * isError - проверяет является ли выражение объектом Error
  */
 
+// underscore
+console.log("und.isError(new Error)", und.isError(new Error));
+console.log("und.isError(Error)", und.isError(Error));
+
 // lodash
 console.log("lod.isError(new Error)", lod.isError(new Error));
 console.log("lod.isError(Error)", lod.isError(Error));
