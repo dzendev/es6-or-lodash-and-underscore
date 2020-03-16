@@ -5,6 +5,10 @@ const lod = require('lodash');
  * isArguments - проверяет является ли выражение arguments
  */
 
+// underscore
+console.log("und.isArguments(function() { return arguments; }())", und.isArguments(function() { return arguments; }()));
+console.log("und.isArguments([1, 2, 3])", und.isArguments([1, 2, 3]));
+
 // lodash
 console.log("lod.isArguments(function() { return arguments; }())", lod.isArguments(function() { return arguments; }()));
 console.log("lod.isArguments([1, 2, 3])", lod.isArguments([1, 2, 3]));
