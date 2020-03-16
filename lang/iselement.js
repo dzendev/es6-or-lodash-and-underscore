@@ -5,6 +5,10 @@ const lod = require('lodash');
  * isElement - проверяет является ли выражение DOM element
  */
 
+// underscore
+console.log("und.isElement(document.body)", und.isElement(document.body));
+console.log("und.isElement('<body>')", und.isElement('<body>'));
+
 // lodash
 console.log("lod.isElement(document.body)", lod.isElement(document.body));
 console.log("lod.isElement('<body>')", lod.isElement('<body>'));
