@@ -5,6 +5,10 @@ const lod = require('lodash');
  * isArray - проверяет является ли выражение Array
  */
 
+// underscore
+console.log("und.isArray([1, 2, 3])", und.isArray([1, 2, 3]));
+console.log("und.isArray('abc')", und.isArray('abc'));
+
 // lodash
 console.log("lod.isArray([1, 2, 3])", lod.isArray([1, 2, 3]));
 console.log("lod.isArray('abc')", lod.isArray('abc'));
