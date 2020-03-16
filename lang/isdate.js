@@ -5,6 +5,10 @@ const lod = require('lodash');
  * isDate - проверяет является ли выражение объектом Date
  */
 
+// underscore
+console.log("und.isDate(new Date)", und.isDate(new Date));
+console.log("und.isDate('Mon April 23 2012')", und.isDate('Mon April 23 2012'));
+
 // lodash
 console.log("lod.isDate(new Date)", lod.isDate(new Date));
 console.log("lod.isDate('Mon April 23 2012')", lod.isDate('Mon April 23 2012'));
