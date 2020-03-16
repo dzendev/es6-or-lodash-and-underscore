@@ -5,6 +5,10 @@ const lod = require('lodash');
  * isSymbol - проверяет является ли выражение Symbol
  */
 
+// underscore
+console.log("und.isSymbol(Symbol.iterator)", und.isSymbol(Symbol.iterator));
+console.log("und.isSymbol('abc')", und.isSymbol('abc'));
+
 // lodash
 console.log("lod.isSymbol(Symbol.iterator)", lod.isSymbol(Symbol.iterator));
 console.log("lod.isSymbol('abc')", lod.isSymbol('abc'));
