@@ -5,6 +5,7 @@ const lod = require('lodash');
  * isNull - проверяет является ли выражение null
  */
 
+// underscore
 console.log("und.isNull(null)", und.isNull(null));
 console.log("und.isNull(void 0)", und.isNull(void 0));
 

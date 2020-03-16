@@ -5,6 +5,11 @@ const lod = require('lodash');
  * isNaN - проверяет является ли выражение NaN
  */
 
+// underscore
+console.log("und.isNaN(NaN)", und.isNaN(NaN));
+console.log("und.isNaN(new Number(NaN))", und.isNaN(new Number(NaN)));
+console.log("und.isNaN(undefined)", und.isNaN(undefined));
+
 // lodash
 console.log("lod.isNaN(NaN)", lod.isNaN(NaN));
 console.log("lod.isNaN(new Number(NaN))", lod.isNaN(new Number(NaN)));
