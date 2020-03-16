@@ -5,6 +5,11 @@ const lod = require('lodash');
  * isFunction - проверяет является ли выражение function
  */
 
+// underscore
+console.log("und.isFunction(lod)", und.isFunction(lod));
+console.log("und.isFunction(/abc/)", und.isFunction(/abc/));
+console.log("und.isFunction(String)", und.isFunction(String));
+
 // lodash
 console.log("lod.isFunction(lod)", lod.isFunction(lod));
 console.log("lod.isFunction(/abc/)", lod.isFunction(/abc/));
