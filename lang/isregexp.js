@@ -5,6 +5,10 @@ const lod = require('lodash');
  * isRegExp - проверяет является ли выражение регулярным выражением
  */
 
+// underscore
+console.log("und.isRegExp(/abc/)", und.isRegExp(/abc/));
+console.log("und.isRegExp('/abc/')", und.isRegExp('/abc/'));
+
 // lodash
 console.log("lod.isRegExp(/abc/)", lod.isRegExp(/abc/));
 console.log("lod.isRegExp('/abc/')", lod.isRegExp('/abc/'));
