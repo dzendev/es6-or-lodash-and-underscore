@@ -6,6 +6,16 @@ const lod = require('lodash');
  */
 
 // lodash
+var compil1 = und.template('hello <%= user %>!');
+console.log("compil1({ 'user': 'fred' })", compil1({ 'user': 'fred' }));
+
+var compil2 = und.template('<b><%- value %></b>');
+console.log("compil2({ 'value': '<script>' })", compil2({ 'value': '<script>' }));
+
+var compil3 = und.template('<% _.forEach(users, function(user) { %><li><%- user %></li><% }); %>');
+console.log("compil3({ 'users': ['fred', 'barney'] })", compil3({'users': ['fred', 'barney'] }));
+
+// lodash
 var compiled1 = lod.template('hello <%= user %>!');
 console.log("compiled1({ 'user': 'fred' })", compiled1({ 'user': 'fred' }));
 
