@@ -6,6 +6,7 @@ const lod = require('lodash');
  * od.reduce([1, 2], (sum, n) => sum + n, 0) -> 3
  */
 
+// underscore
 console.log("und.reduce([1, 2], (sum, n) => sum + n, 0)", und.reduce([1, 2], (sum, n) => sum + n, 0));
 let arr1 = und.reduce({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
   (result[value] || (result[value] = [])).push(key);
