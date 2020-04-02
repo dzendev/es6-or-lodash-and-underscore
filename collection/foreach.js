@@ -16,10 +16,10 @@ und.each({ 'a': 1, 'b': 2 }, function(value, key, list){
 
 // lodash
 lod.forEach([1, 2], function(value) {
-  console.log(value * 2);
+	console.log(value * 2);
 });
 lod.each({ 'a': 1, 'b': 2 }, function(value, key) {
-  console.log(key);
+	console.log(key);
 });
 
 // es6
@@ -32,4 +32,8 @@ for (let prop in obj) {
 	if (obj.hasOwnProperty(prop)) {
 		console.log(prop)
 	}
+}
+
+for (let key of Object.keys(obj)) {
+	console.log(key);
 }
